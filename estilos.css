@@ -1,0 +1,673 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: Averta Std;
+    src: url(..fontes/AvertaStd-Bold.ttf)
+}
+
+:root{
+    --corLaranja: #f98c3d;
+    --corCinza: #454b58;
+    --corCinza1: rgb(47 53 66);
+    --tamG: 18px;
+    --tamP: 14px;
+}
+
+
+.pagina{
+    width: 100%;
+    height: 500px;
+    background-color: var(--corCinza1);
+    background-image: url('imagens/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.header img{
+    width: 150px;
+    height: 30px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 20px;
+    color: white;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.containerMenu{
+    width: 70%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+    font-family: 'Averta Std', sans-serif;
+    color: white;
+    align-items: center;
+    gap: 200px;
+}
+
+.containerMenu img{
+    width: 400px;
+}
+
+.menu a:hover{
+    cursor: pointer;
+    color: var(--corLaranja);
+    border-bottom: 2px solid var(--corLaranja);
+}
+
+.menu a{
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--corCinza1);
+    text-decoration: none;
+}
+
+.descricaoMenu{
+    color: var(--corLaranja);
+    font-size: 10px;
+}
+
+.umNome{
+    padding-top: 3px;;
+    font-size: 30px;
+    color: white;
+}
+
+.umDescricao{
+    padding-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.umBotoes{
+    padding-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.botao{
+    padding: 10px 18px;
+    background-color: var(--corCinza);
+    font-family: 'Averta Std', sans-serif;
+    color: #f98c3d;
+    border: 1px solid var(--corLaranja);
+    border-radius: 5px;
+
+}
+
+
+.botao:hover{
+    background-color: var(--corLaranja);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* PERFILLLLLL */
+
+#paginaPerfil{
+    width: 100%;
+    background-color: var(--corCinza);
+    height: auto;
+}
+
+
+.containerPerfil{
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 16px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+
+.perfil{
+    display:grid;
+    width: 100%;
+    justify-items: center;
+    height: auto;
+}
+
+.fotoPerfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--corLaranja);
+}
+
+
+.meuNome{
+    padding-top: 15px;
+    color: var(--corLaranja);
+    font-family: 'Averta Std', sans-serif;
+    font-size: 24px;
+}
+
+.profissao{
+    font-family: 'Averta Std', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.redes img{
+    padding-top: 10px;
+    width: 30px;
+    height: 30px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--corCinza);
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+
+.tituloSobreMim{
+    display: flex;
+    font-Size: 24px;
+    font-family: 'Averta Std', sans-serif;
+    color: white;
+    
+}
+
+.star{
+    width: 25px;
+    height: 25px;
+    
+}
+
+.redes img:hover{
+    opacity: 60%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--corLaranja);
+    cursor: pointer;
+}
+
+.mao{
+    display: flex;
+    padding-top: 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.mao img{
+    width: 15px;
+    height: 15px;
+    padding-right: 10px;
+}
+
+.texto{
+    font-family: 'Averta Std', sans-serif;
+    text-align: justify;
+    color: white;
+    font-size: var(--tamG);
+    line-height: 22px;
+}
+
+
+/* SKILLS */
+
+#paginaSkills{
+    width: 100%;
+    height: auto;
+    background-color: var(--corCinza1);
+    background-image: url('imagens/background.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.containerSkills{
+    width: 50%;
+    padding: 40px 16px;
+    height: auto;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.skill{
+    font-family: 'Averta Std', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+
+.textoSkill{
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Averta Std', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.skillsImg{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.skillsImg svg{
+    width: 50px;
+    height: 50px;
+}
+
+.txtSkills{
+    display: flex;
+    justify-content: center;
+}
+
+
+.skillsImg img{
+    width: 50px;
+    height: 50px;
+}
+
+.skillsImg{
+    font-size: 18px;
+    font-family: 'Averta Std', sans-serif;
+    color: white;   
+}
+
+
+.skills{ 
+    width: 80px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    background-color: var(--corCinza);
+    border: 1px solid var(--corLaranja);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.skills svg path:nth-child(1){
+    fill: #898E98;
+}
+
+
+.skills:hover svg path:nth-child(1){
+    fill: var(--corLaranja);
+    background-color: var(--corLaranja);
+    border-radius: 10px;
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.skills:hover{
+    background-color: var(--corCinza1);
+}
+
+/* PROJETOS */
+
+#paginaProjetos{
+    width: 100%;
+    height: auto;
+    background-color: var(--corCinza);
+}
+
+.containerprojetos{
+    width: 80%;
+    padding: 40px 16px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.tituloImgProjeto{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.tituloProjeto{
+    font-size: 40px;
+    font-family: 'Averta Std', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+}
+
+.txtProjetos{
+    padding-top: 25px;
+    font-family: 'Averta Std', sans-serif;
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.txtProjetos span{
+    font-weight: 600;
+}
+
+.containerExemplos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.exemplo{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background-color: var(--corCinza1);
+    border-radius: 10px;
+    padding: 16px;
+    gap: 16px;
+}
+
+.tituloExemplos{
+    font-size: 18px;
+    font-family: 'Averta Std', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+.txtExemplos{
+    font-family: 'Averta Std', sans-serif;
+    padding-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.tagsExemplos{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content:space-between;
+    border-radius: 20px;
+}
+
+.tags{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Averta Std', sans-serif;
+    font-size: 16px;
+    color: var(--corLaranja);
+    padding: 5px 8px;
+    border: 1px solid var(--corLaranja);
+    border-radius: 10px;
+}
+
+
+
+/* CONTATOOOO */
+
+
+#paginaContato{
+    width: 100%;
+    background-color:  var(--corCinza1);
+    background-image: url('imagens/background.png');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+.containerContato{
+    width: 70%;
+    height: auto;
+    padding: 40px 16px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    
+}
+
+
+.contato{
+    font-family: 'Averta Std', sans-serif;
+    color: white;
+    font-size: 18px;
+
+}
+
+.contatos{
+    display: flex;
+    flex-direction: row;
+}
+
+.tituloContato{
+    font-family: 'Averta Std', sans-serif;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.imagemContato{
+    width: 400px;
+}
+
+.txtContato{
+    padding: 20px 0;
+}
+
+.linkContato{
+    display: flex;
+    padding: 5px 0;
+    gap: 15px;
+}
+
+.linkContato a{
+    font-family: 'Averta Std', sans-serif;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.linkContato:hover{
+    opacity: 70%;
+}
+.redes2{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+    
+}
+
+.contato img{
+    width: 19px;
+    height: 17px;
+}
+
+.redes2 img{
+        padding-top: 10px;
+        width: 30px;
+        height: 30px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid var(--corCinza1);
+}
+
+.redes2 img:hover{
+    opacity: 60%;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--corLaranja);
+}
+
+
+
+/* RODAPEEEEEEEEEE */
+
+.containerRodape{
+    width: 100%;
+    height: auto;
+    background-color:  var(--corCinza1);
+    border-bottom: 3px solid var(--corLaranja);
+}
+
+.rodape{
+    width: 80%;
+    height: auto;
+    padding: 0 16px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Averta Std', sans-serif;
+    color: white;
+}
+
+.rodape img{
+    width: 100px;
+    height: 20px;
+    padding: 0 100px;
+}
+
+.rodape span{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--corLaranja);
+}
+
+
+/* RESPONSIVOOO
+
+*/
+@media (max-width: 1199px){
+    .pagina, .header{
+        display: flex;
+        padding-top: 16px;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 16px;
+    }
+
+    .menu{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgInicio
+    {
+        display: none;
+    }
+
+    .descricaoMenu{
+        display: flex;
+        flex-direction: column;
+        padding: 16px auto;
+     
+    }
+
+    .containerMenu{
+        grid-template-columns: 1fr;
+        padding: 16px auto;
+    }
+
+    .umBotoes{
+        flex-direction: column;
+    }
+
+    .containerPerfil{
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin:  0 auto;
+       justify-content: center;
+       padding: 16px;
+    }
+
+    .h1{
+        text-align: center;
+    }
+
+    #paginaProjetos{
+        height: auto;
+        justify-content: center;
+    }
+
+    .containerprojetos{
+        grid-template-columns: 1fr;
+        padding: 16px 0px;
+        height: auto;
+
+    }
+
+    .containerExemplos{
+        grid-template-columns: 280px;
+        justify-content: center;
+    }
+
+    .paginaContato{
+        height: auto;
+    }
+
+    .containerContato{
+        grid-template-columns: 1fr;
+        padding: 16px auto;
+    }
+
+    .imagemContato{
+        display: none;
+    }
+
+    .redes2{
+        display: none;
+    }
+
+    .containerRodape{
+        max-width: 100%;
+        height: auto;
+        padding: 16px 0;
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto, .txtProjetos, .txtContato{
+        font-size: var(--tamP);
+    }
+
+    .skiils{
+        padding: 0 20px;
+        
+    }
+   
+    .skillsImg{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+}
